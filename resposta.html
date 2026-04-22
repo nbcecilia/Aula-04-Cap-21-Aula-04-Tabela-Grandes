@@ -4,114 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resposta</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            
+            border-collapse: collapse;
+        } 
+        td {
+            text-align: left;
+            width: 300px;
+            height: 10px;
+        }
+        td, th {
+            border: 1px solid black;
+        }
+        .tit2 {
+            width: 50px;
+        }
+        .valor{
+            text-align: right;
+            width: 50px;
+            font-variant-numeric: tabular-nums;
+        }
+        caption{
+            background-color: grey;
+            border: 0px;
+        }
+        .descricao {
+            font-weight: bold;
+        }
+        tfoot {
+            background-color: grey;
+        }
+
+    </style>
 
 </head>
 <body>
     <table>
         <caption>População dos Estados Brasileiros - 2024</caption>
         <thead>
-            <tr>
+            <tr class="descricao">
                 <td>Estado</td>
-                <td>População</td>
+                <td class="tit2" >População</td>
                 <td>Comando HTML usado</td>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td><strong>Acre</strong></td>
-                <td><mark>830.018</mark></td>
+                <td class="valor"><mark>830.018</mark></td>
                 <td> <strong>'Negrito'</strong> e <mark>'Destacado'</mark></td>
             </tr>
             <tr>
                 <td><i>Alagoas</i></td>
-                <td>3.365.351</td>
+                <td class="valor">3.365.351</td>
                 <td><i>'Itálico'</i></td>
             </tr>
             <tr>
                 <td><u>Amapá</u></td>
-                <td>877.613</td>
+                <td class="valor">877.613</td>
                 <td><u>'Texto sublinhado'</u></td>
             </tr>
             <tr>
                 <td> <del>Amazonas</del> </td>
-                <td> <u>4.269.995</u></td>
+                <td class="valor"> <u>4.269.995</u></td>
                 <td><del>'Texto riscado'</del> e <u>'Texto sublinhado'</u></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><sup>Bahia</sup> </td>
+                <td class="valor">14.141.626</td>
+                <td><sup>'Texto sobrescrito''</sup></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>CE</td>
+                <td class="valor">9.240.580</td>
+                <td>'Abreviação</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td> <strong>Distrito Federal </strong></td>
+                <td class="valor">3.098.883</td>
+                <td> <strong>'Texto em negrito'</strong></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><q>Espírito Santo</q></td>
+                <td class="valor">4.108.508</td>
+                <td><q>Citação curta</q></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td> <cite>Goiás</cite></td>
+                <td class="valor">7.206.589</td>
+                <td><cite>Citação da fonte</cite></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td> <code>Maranhão</code></td>
+                <td class="valor">6.775.805</td>
+                <td> <code>'Texto monoespaçado'</code></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><pre>Mato Grosso</pre></td>
+                <td class="valor">3.658.813</td>
+                <td><pre>'Texto'</pre></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td> <small>Paraíba</small></td>
+                <td class="valor">4.059.805</td>
+                <td><small>'Texto pequeno'</small></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><sub>Piauí</sub></td>
+                <td class="valor">3.281.480</td>
+                <td><sub>'Texto subscrito'</sub></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><blockquote>Rio de Janeiro</blockquote></td>
+                <td class="valor">16.054.524</td>
+                <td> <blockquote>'Citação em bloco'</blockquote></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td> <strong> Rio Grande do Sul</strong> </td>
+                <td class="valor">10.882.965</td>
+                <td> <strong>'Negrito'</strong></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td> <i>Rondônia</i></td>
+                <td class="valor"> 1.616.379</td>
+                <td> <i>'Ítalico'</i></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td> <mark>Roraima</mark></td>
+                <td class="valor">636.707</td>
+                <td> <mark>'Texto Destacado'</mark></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>TO</td>
+                <td class="valor">1.607.363</td>
+                <td>'Abreviação'</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td></td>
-                <td></td>
+                <td> <strong>Total da População estimada:</strong></td>
+                <td class="coluna">Soma Total</td> <!-- realizar soma das -->
                 <td></td>
             </tr>
         </tfoot>
